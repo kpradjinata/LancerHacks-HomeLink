@@ -1,26 +1,75 @@
+# HomeLink
+
+## Overview
+
+HomeLink is a mobile application designed to address the increasing challenges of homelessness. With a user-friendly interface, it allows users to submit reports on individuals experiencing homelessness, providing quick or detailed information. The app utilizes Core Location, GPS, and SMS to immediately notify local shelters and authorities about the location of rough sleepers. HomeLink aims to bridge the gap between the community and local shelters, fostering a proactive approach to homelessness.
+
+## Features
+
+- Quick and detailed report submission
+- Automated SMS notifications to local shelters
+- GPS and Core Location integration
+- Machine Learning for predicting future homeless hotspots
+- User-friendly interface designed on Figma
+
+## Getting Started
+
+To run the app, follow the steps below:
+
+1. Open the project in Xcode.
+2. Build and run the app on your iOS device.
+
+### Prerequisites
+
+- Xcode
+- iOS device
+
+## Usage
+
+1. Launch the app on your iOS device.
+2. Choose between a quick or detailed report.
+3. Submit information about observed rough sleepers.
+4. Automated SMS notifications are sent to local shelters.
+5. Contribute to predicting future homeless hotspots.
+
+## Project Structure
+
+The project is structured into two main components:
+
+- **HeatMapViewController:** Displays a Mapbox map with a heatmap layer representing homeless data.
+
+- **MapViewController:** Integrates Core Location, GPS, and SMS for submitting and notifying about homeless individuals. Utilizes Mapbox for mapping and annotation.
+
+## Dependencies
+
+- Mapbox
+- Core Location
+- MessageUI
+
 ## Inspiration
 
-Since the  pandemic struck, the number of people struggling with homelessness has increased by 17%. Seeing innocent, everyday people being forced to sleep on the street has left many people wondering how they can help. This inspired us to create Homelink, the world’s first attempt to encourage everyday people to become involved in the erasure of homelessness.  
+The app was inspired by the increasing challenges of homelessness, especially during the pandemic, and the desire to empower individuals to take part in eradicating homelessness.
 
-## What it does
+## What It Does
 
-In the app, users have the option to submit a “quick-report” or a “detailed report” of a rough sleeper that they see. If users choose to submit a quick report, seen on the front page, their location is immediately sent to local shelters through Core Location, GPS, and SMS. If users choose to submit a detailed report, they submit basic information about the rough sleeper they observed from their gender to the number of dependants. After the user submits their report, an automated SMS text message is sent to all local shelters in a 25 square mile radius, who can assess the needs of each particular individual accordingly. Local nonprofit and shelter authorities can determine the needs of the individual after our app has informed them of location, whether it be a bed to sleep on or an opportunity for basic employment. Data from these detailed reports will contribute to the construction of future datasets of homelessness that can be used to predict future homeless hotspots.  
+HomeLink allows users to submit quick or detailed reports on rough sleepers. The app uses GPS and Core Location to send immediate SMS notifications to local shelters. Detailed reports contribute to future datasets for predicting homeless hotspots.
 
-## How we built it
-We built our application by first modeling our design on Figma, designing a UI we thought was appealing to the eye. We had one member work on the UI part of the application, while another member worked on the logic of the application. The member working on the logic of the application worked on integrating MapsBox cocoa pods to create a map that could create annotations/pins based on users' current GPS location. Using location data of those suffering from homelessness, we were able to train a machine-learning algorithm to predict future homeless hotspots. 
+## How We Built It
 
-## Challenges we ran into
+The application was built by combining UI/UX design from Figma with logic and backend development. We integrated Mapbox CocoaPods for mapping, Core Location, and SMS texting. Machine learning was used to predict future homeless hotspots.
 
-Our application crashed during a merge between our UI and logic/backend due to stray files that were deleted during the merge. Besides merge issues, we struggled on implementing maps into our application by taking in data from the internet and using the phone's cellular data to find and plot longitude/latitude positions. 
+## Challenges
 
-## Accomplishments that we're proud of
+Challenges included merge issues during the integration of UI and logic, as well as implementing maps and handling data from the internet.
 
-A working app and finally working through our merge issues. 
+## Accomplishments
 
-## What we learned
+The team successfully addressed merge issues, resulting in a functional app. Learning Swift, SMS texting, GPS, Maps, and Machine Learning was a significant accomplishment.
 
-We learned how to utilize Swift, SMS texting, GPS, Maps, and Machine Learning in an effort to mitigate homelessness across the US. 
+## What We Learned
 
-## What's next for HomeLink
+The team gained valuable experience in utilizing Swift, integrating SMS notifications, handling GPS and Maps, and applying Machine Learning to address homelessness.
 
-By connecting with shelters and soup kitchens worldwide, we hope to efficiently and effectively rollout HomeLink worldwide. 
+## What's Next for HomeLink
+
+Future plans involve connecting with shelters and organizations globally to expand HomeLink's impact and efficiently address homelessness worldwide.
